@@ -1,0 +1,252 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Background Image for Entire Website */
+body {
+    background: url('images/image1.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: rgba(0, 0, 0, 0.8); /* Semi-transparent black */
+    color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    transition: background 0.3s, color 0.3s;
+}
+
+header nav ul li a:hover,
+header nav ul li a.active {
+    background: #f90;
+    color: #333;
+    border-radius: 5px;
+}
+
+/* Hero Section */
+#hero {
+    text-align: center;
+    padding: 5rem 2rem;
+    color: #fff;
+}
+
+#hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+#hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+#hero button {
+    padding: 0.75rem 1.5rem;
+    background: #f90;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#hero button:hover {
+    background: #ff7518;
+}
+
+/* Section Styling */
+section {
+    padding: 3rem 2rem;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.7); /* Transparent background for readability */
+    border-radius: 10px;
+    margin: 2rem auto;
+    width: 90%;
+    max-width: 1200px;
+}
+
+/* Facilities Section */
+.facility-list {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.facility {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s;
+    width: 250px;
+}
+
+.facility:hover {
+    transform: translateY(-5px);
+}
+
+.facility img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+.facility h3 {
+    font-size: 1.2rem;
+    color: #f90;
+}
+
+/* Services Section */
+#services ul {
+    list-style: none;
+    padding: 0;
+}
+
+#services ul li {
+    background: rgba(255, 255, 255, 0.1);
+    margin: 0.5rem auto;
+    padding: 0.75rem 1rem;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 500px;
+    text-align: left;
+    color: #fff;
+    font-size: 1.1rem;
+}
+
+/* Membership Plans Section */
+.plans {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.plan {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 1.5rem;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s;
+    width: 250px;
+}
+
+.plan:hover {
+    transform: translateY(-5px);
+}
+
+.plan h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #f90;
+}
+
+.plan p {
+    font-size: 1.2rem;
+    color: #fff;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    font-size: 0.875rem;
+    margin-top: 2rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .facility-list,
+    .plans {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    section {
+        padding: 2rem 1rem;
+    }
+}
+
+/* About Us Section */
+#about {
+    padding: 3rem;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    margin: 2rem auto;
+    max-width: 1200px;
+}
+
+#about p {
+    font-size: 1.2rem;
+}
+
+/* Contact Section */
+#contact form {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#contact input,
+#contact textarea,
+#contact button {
+    width: 100%;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 5px;
+}
+
+#contact button {
+    background: #f90;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+#contact button:hover {
+    background: #ff7518;
+}

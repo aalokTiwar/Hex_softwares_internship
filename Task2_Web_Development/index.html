@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gymfit</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Gymfit</div>
+        <nav>
+            <ul>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#facilities">Facilities</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#plans">Membership Plans</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="hero">
+        <h1>Welcome to Gymfit</h1>
+        <p>Your fitness journey starts here!</p>
+        <button onclick="scrollToSection('#plans')">Join Now</button>
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>At Gymfit, we are committed to providing the best fitness experience for our members. 
+           Our team of certified trainers and state-of-the-art facilities make fitness fun, engaging, 
+           and results-driven. Whether you're a beginner or a fitness enthusiast, we have something 
+           for everyone.</p>
+    </section>
+
+    <section id="facilities">
+        <h2>Our Facilities</h2>
+        <div class="facility-list">
+            <div class="facility">
+                <img src="images/image2.png" alt="Facility 1">
+                <h3>State-of-the-art Equipment</h3>
+            </div>
+            <div class="facility">
+                <img src="images/image4.jpg" alt="Facility 2">
+                <h3>Spacious Workout Areas</h3>
+            </div>
+            <div class="facility">
+                <img src="images/image3.jpg" alt="Facility 3">
+                <h3>Modern Locker Rooms</h3>
+            </div>
+        </div>
+    </section>
+
+    <section id="services">
+        <h2>Our Services</h2>
+        <ul>
+            <li>Personal Training</li>
+            <li>Group Classes</li>
+            <li>Nutrition Counseling</li>
+            <li>Yoga and Meditation</li>
+        </ul>
+    </section>
+
+    <section id="plans">
+        <h2>Membership Plans</h2>
+        <div class="plans">
+            <div class="plan">
+                <h3>Basic Plan</h3>
+                <p>1000₹/month</p>
+            </div>
+            <div class="plan">
+                <h3>Premium Plan</h3>
+                <p>1500₹/month</p>
+            </div>
+            <div class="plan">
+                <h3>VIP Plan</h3>
+                <p>2000₹/month</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>We'd love to hear from you! Feel free to reach out using the details below.</p>
+        <ul>
+            <li>Email: support@gymfit.com</li>
+            <li>Phone: +91 9876567654</li>
+            <li>Address: xyz area near xyz, Thane, Maharastra india</li>
+        </ul>
+        <form id="contact-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2025 Gymfit. All Rights Reserved.</p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
